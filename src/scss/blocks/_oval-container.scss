@@ -1,0 +1,18 @@
+@use "../mixins";
+@use "../variables";
+
+.oval-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2ae881;
+  border-radius: 50px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 140px;
+
+  &__oval-text {
+    color: white;
+    font-size: 18px;
+  }
+}

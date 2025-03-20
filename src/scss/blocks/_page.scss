@@ -1,0 +1,8 @@
+@use "../mixins";
+@use "../variables";
+
+.page {
+    &__header{
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,34 @@
+@use "../mixins";
+@use "../variables";
+
+.arrow-container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 60px; 
+  height: 60px; 
+  background-color: #8a2be2; 
+  border-radius: 50%; 
+  position: relative;
+
+  &__arrow-down {
+    width: 20px; /* Ширина стрелки */
+    height: 20px; /* Высота стрелки */
+    border: 3px solid #fff; /* Белый цвет стрелки */
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg); /* Поворачиваем стрелку вниз */
+    position: absolute;
+    animation: moveUpDown 1.6s infinite ease-in-out; /* Анимация */
+  }
+
+  @keyframes moveUpDown {
+    0%,
+    100% {
+      top: 30%; 
+    }
+    50% {
+      top: 40%; 
+    }
+  }
+}

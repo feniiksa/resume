@@ -1,0 +1,27 @@
+@use "../mixins";
+@use "../variables";
+
+.left {
+  &__h1 {
+    margin-bottom: 45px;
+    rotate: 5deg;
+    font-size: 40px;
+    border: 2px solid #ffe601;
+  }
+
+  &__contact {
+    border-bottom: 3px solid #ff87ff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  &__span {
+    background-color: #2ae881;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}

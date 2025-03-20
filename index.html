@@ -4,17 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="/main.js" defer></script>
   </head>
   <body class="page">
     <section class="page__header header">
       <div class="header__left left">
-        <h1 class="left__h1">frontend-developer</h1>
-        <p>Name: Ольга</p>
-        <p>Surname: Гимнопуло</p>
-        <p>Telegram: @feniiksa</p>
-        <p>phone: +7-928-070-70-52</p>
-        <p>Github: https://github.com/feniiksa</p>
+        <h1 class="left__h1 name-splite">frontend-developer</h1>
+        <p class="left__contact"><span class="left__span">Name:</span> Ольга</p>
+        <p class="left__contact">
+          <span class="left__span">Surname:</span> Гимнопуло
+        </p>
+        <p class="left__contact">
+          <span class="left__span">Telegram:</span>
+          <a href="https://t.me/feniiksa" class="left__link">@feniiksa</a>
+        </p>
+        <p class="left__contact">
+          <span class="left__span">phone:</span>
+          <a href="tel:+79280707052" class="left__link">+7-928-070-70-52</a>
+        </p>
+        <p class="left__contact">
+          <span class="left__span">Github:</span>
+          <a href="https://github.com/feniiksa" class="left__link"
+            >https://github.com/feniiksa</a
+          >
+        </p>
       </div>
       <div class="header__right right">
         <div class="right__wrap">
@@ -27,23 +46,35 @@
       </div>
     </section>
 
-    <section class="about">
-      <p>
+    <section class="page__about about">
+      <p class="about__text">
         Привет! Я занимаюсь разработкой интерфейсов сайтов, развиваюсь и
         совершенствую навыки написания кода перенимая опыт у действующих midl и
         senior разработчиков) И просто обожаю программирование! ))
       </p>
-
-      <h2>Мои навыки</h2>
-      <div class="hard-box">
+      <p class="about__text">
+        В команде делала frontend-разработку сайта рестоврации кожанных изделий:
+      </p>
+      <!-- тут ссылка на сайт, которая чуть пошатается влево потом вправо и и
+        застынет чуть косо а ещё стрелочка в кружке указывающая на ссылку-->
+      <div class="about__arrow-container arrow-container">
+        <div class="arrow-container__arrow-down"></div>
+      </div>
+      <!-- <div class="about__oval-container oval-container">
+        <span class="oval-container__oval-text">нажми туда</span>
+      </div> -->
+      <a class="about__link" href="https://alpaca1.ru/">https://alpaca1.ru/</a>
+      <!-- тут будут вопросики вокруг заголовка -->
+      <h2 class="about__h2 name-splite">Что я знаю</h2>
+      <div class="about__hard-box hard-box">
         тут будут навыки в виде блоков при наведении будут заполняться на
         звёздочки
       </div>
     </section>
-
+    <!--
     <section class="works">
       тут будут ссылки на мои работы в виде слайдера
-    </section>
+    </section> -->
 
     <!-- нужна формочка для обратной связи -->
   </body>

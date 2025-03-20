@@ -14,7 +14,7 @@ path="$config_path/$filename"
 index_path="$config_path/_index.scss" 
  
 # Строка импорта для добавления в _index.scss 
-import_line="@import '$filename';" 
+import_line="@use '$filename';" 
  
 # Создаем директорию, если она не существует 
 mkdir -p "$config_path" 
@@ -24,7 +24,7 @@ if [ -f "$path" ]; then
     echo -e "\033[0;31mФайл $path уже существует\033[0m" 
 else 
     # Создаем файл с определением класса, если его нет 
-    echo -e "@import \"../mixins\";\n\n.$param {\n    \n}" > "$path" 
+    echo -e "@use \"../mixins\"@use \"../variables\";\n\n.$param {\n    \n}" > "$path" 
  
     # Добавляем импорт в _index.scss, если его там еще нет 
     if [ ! -f "$index_path" ]; then 
