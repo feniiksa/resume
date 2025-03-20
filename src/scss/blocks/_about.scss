@@ -18,11 +18,6 @@
     top: -30px;
   }
 
-  //   &__oval-container {
-  //     display: block;
-  //     top: -30px;
-  //   }
-
   &__link {
     font-size: 30px;
     display: flex;
@@ -30,26 +25,29 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    border: 1px solid rebeccapurple;
-    padding: 10px;
+    transform: 0.3s ease-in-out;
+    position: relative;
+    margin-bottom: 30px;
+
     &:hover {
       animation: tiltAnimation 1s ease-in-out forwards;
+      border-color: #8a2be2;
 
       @keyframes tiltAnimation {
         0% {
           transform: rotate(0deg);
         }
         50% {
-          transform: rotate(-2deg) translateY(5px); /* Наклон вправо и остановка */
+          transform: rotate(-2deg) translateY(5px);
         }
         100% {
-          transform: rotate(2deg) translateY(5px); /* Наклон влево и опускание */
+          transform: rotate(2deg) translateY(5px);
         }
       }
     }
 
-    &__h2 {
-    }
+    // &__h2 {
+    // }
 
     &__hard-box {
     }

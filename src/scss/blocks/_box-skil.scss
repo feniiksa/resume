@@ -1,0 +1,11 @@
+@use "../mixins";
+@use "../variables";
+
+.box-skil {
+    width: 100%;
+    height: 30px;
+    padding: 10px 15px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+}
