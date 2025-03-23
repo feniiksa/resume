@@ -10,5 +10,9 @@
     padding: 15px;
     color: #fff;
     text-align: center;
+
+    @include mixins.mq(lg) {
+     padding: 20px;
+    }
   }
 }

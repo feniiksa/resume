@@ -7,6 +7,12 @@
     rotate: 5deg;
     font-size: 40px;
     border: 2px solid #ffe601;
+    border-radius: 5px;
+
+    @include mixins.mq(lg) {
+      font-size: 50px;
+      border: 3px solid #ffe601;
+    }
   }
 
   &__contact {
@@ -14,6 +20,12 @@
     padding-bottom: 5px;
     margin-bottom: 10px;
     font-size: 20px;
+
+    @include mixins.mq(lg) {
+      border-bottom: 3.5px solid #ff87ff;
+      margin-bottom: 15px;
+      font-size: 25px;
+    }
   }
 
   &__span {

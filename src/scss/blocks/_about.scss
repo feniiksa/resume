@@ -2,6 +2,13 @@
 @use "../variables";
 
 .about {
+  &__size {
+    @include mixins.mq(xl) {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+
   &__text {
     background-color: #ffe601;
     border-radius: 15px;
@@ -15,12 +22,28 @@
       background: #8a2be2;
       color: #fff;
     }
+
+    @include mixins.mq(lg) {
+      border-radius: 10px;
+      margin-bottom: 25px;
+      padding: 30px;
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+      font-size: 20px;
+      width: calc(100% - 10%);
+      margin: auto auto 20px auto;
+    }
   }
 
   &__arrow-container {
     display: block;
-    left: 270px;
-    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+
+    @include mixins.mq(lg) {
+      margin-bottom: 10px;
+    }
   }
 
   &__link {
@@ -50,12 +73,21 @@
         }
       }
     }
+
+    @include mixins.mq(lg) {
+      margin-bottom: 55px;
+    }
   }
 
   &__h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 40px;
   }
 
-  // &__hard-box {
-  // }
+  &__hard-box {
+    @include mixins.mq(lg) {
+      width: calc(100% - 35%);
+      margin: 0 auto 80px auto;
+    }
+  }
 }

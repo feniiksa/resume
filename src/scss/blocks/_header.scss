@@ -4,9 +4,12 @@
 .header {
   display: flex;
   flex-direction: column;
-//   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+
+  @include mixins.mq(md) {
+    flex-direction: row;
+  }
 
   &__left {
   }

@@ -33,12 +33,16 @@
   &__box-skil--m {
     grid-area: l;
   }
+  &__box-skil--v {
+    grid-area: v;
+  }
 
   grid-template-areas:
     "q w p p p p p p"
     "r o o o o j j j"
-    "k k k k z z l l";
+    "k k k v z z l l";
 
-  //   &box-skil {
-  //   }
+  @include mixins.mq(lg) {
+    gap: 6px;
+  }
 }
