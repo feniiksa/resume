@@ -2,7 +2,10 @@
 @use "../variables";
 
 .page {
-    &__header{
-        margin-bottom: 40px;
-    }
+  padding-inline: 15px;
+  
+  &__header,
+  &__about {
+    margin-bottom: 40px;
+  }
 }

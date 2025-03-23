@@ -2,10 +2,13 @@
 @use "../variables";
 
 .box-skil {
-    width: 100%;
-    height: 30px;
-    padding: 10px 15px;
-    background-color: blue;
+  background-color: blue;
+  border-radius: 5px;
+
+  &__cont {
+    font-size: 20px;
+    padding: 15px;
     color: #fff;
-    border-radius: 5px;
+    text-align: center;
+  }
 }

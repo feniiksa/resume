@@ -2,5 +2,43 @@
 @use "../variables";
 
 .hard-box {
-    
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+
+  &__box-skil--a {
+    grid-area: q;
+  }
+  &__box-skil--b {
+    grid-area: w;
+  }
+  &__box-skil--c {
+    grid-area: p;
+  }
+  &__box-skil--d {
+    grid-area: r;
+  }
+  &__box-skil--e {
+    grid-area: o;
+  }
+  &__box-skil--f {
+    grid-area: j;
+  }
+  &__box-skil--g {
+    grid-area: k;
+  }
+  &__box-skil--h {
+    grid-area: z;
+  }
+  &__box-skil--m {
+    grid-area: l;
+  }
+
+  grid-template-areas:
+    "q w p p p p p p"
+    "r o o o o j j j"
+    "k k k k z z l l";
+
+  //   &box-skil {
+  //   }
 }
